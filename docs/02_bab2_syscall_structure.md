@@ -1,8 +1,6 @@
 # Tugas Praktikum Minggu 2  
 Topik: Struktur System Call dan Fungsi Kernel  
 
----
-
 ## A. Deskripsi Singkat
 Pada praktikum minggu ini, mahasiswa akan mempelajari **mekanisme system call dan struktur sistem operasi**.  
 System call adalah antarmuka antara program aplikasi dan kernel yang memungkinkan aplikasi berinteraksi dengan perangkat keras secara aman melalui layanan OS.
@@ -72,22 +70,32 @@ Setelah menyelesaikan tugas ini, mahasiswa mampu:
 ### Tugas
 1. Dokumentasikan hasil eksperimen `strace` dan `dmesg` dalam bentuk tabel observasi.  
 2. Buat diagram alur system call dari aplikasi → kernel → hardware → kembali ke aplikasi.  
-3. Tulis analisis 400–500 kata tentang:
-   - Mengapa system call penting untuk keamanan OS?  
-   - Bagaimana OS memastikan transisi user–kernel berjalan aman?  
-   - Sebutkan contoh system call yang sering digunakan di Linux.  
-4. Simpan semua hasil di:
+3. Tulis analisis 400–500 kata :
+   jawab: system cal merupakan mekanisme penting yang memungkinkan program aplikasi (user mode) berinteraksi dengan kernel (system mode)
+   secara amandan terkontrol. tanpa system call, program pengguna tidak akan bisa mengakses sumber daya penting seperti memori, file,
+   perangkat keras, maupun jaringan, karena akses langsung dari user mode ke kernel dapat menyebabkan kerusakan system atau kebocoran
+   data. Oleh karena itu, system call berperan sebagai gerbang penghubung antara pengguna dan sistem operasi yang menjaga keamanan serta
+   stabilitas seluruh sistem komputer.
+   system call penting bagi keamanan OS karena berfungsi sebagai lapisan kontrol antara aplikasi dan sumber daya inti sistem. kernel
+   memiliki hak istimewa tertinggi, sedangkan program pengguna berjala di mode terbatas (user mode). jika program pengguna diizinkan
+   mengakses kernel secara langsung, maka virus atau program berbahaya bisa mengubah data sistem, menghapus file penting, ataumengganggu
+   proses lain. Dengan adanya syistem call, setiap permintaan dari user ke kernel harus melalui prosedur yang diawasi. Kernel akan
+   memverifikasi apakh permintaan tersebut sah, dan apakah operasi tersebut aman dilakukan.
+   Selain itu, transisi anatara user mode dan kernel mode juga dijaga ketat agar berjalan aman. saat program melakukan system call, CPU
+   akan berpindah dari user mode ke kernel mode melalui mekanisme yang disebut trap atau interrupt. OS memastikan bahwa hanya intruksi
+   tertentu yang bisa memicu transisi ini, dan alamat kode kernel yang dijalankan sudah sudah ditentukan secara tetap.   
+5. Simpan semua hasil di:
    ```
    praktikum/week2-syscall-structure/
    ```
 
 ### Quiz
-Jawab pertanyaan berikut di bagian **Quiz** laporan:
-1. Apa fungsi utama system call dalam sistem operasi?  
-2. Sebutkan 4 kategori system call yang umum digunakan.  
-3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
-
----
+1. Apa fungsi utama system call dalam sistem opera
+   jawab: Memberikan layanan agar program dapat menggunakan fungsi-fungsi kerneluntuk mengakses sumber daya sistem secara aman dan                  efisien.
+3. Sebutkan 4 kategori system call yang umum digunakan.
+   jawab: Manajemen proses, Manajemen berkas, Manajemen memori, Manajemen perangkat I/O.  
+5. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+   jawab: Karena berjalan di user mode, sedangkan fungsi system call berada di kernel mode.
 
 ## E. Output yang Diharapkan
 - Hasil observasi system call (`strace ls`) dimasukkan ke dalam `laporan.md`.  
