@@ -1,26 +1,27 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu 3
+Topik: Manajemen File dan Permission di linux
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- Nama : ISMATUL KHOERIYAH
+- NIM  : 250202912 
+- Kelas: 1IKRA
 
 ---
 
 ## Tujuan
 Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+- Menggunakan perintah Is pwd cd cat untuk navigasi file.
+- Menggunakan chomd dan chown untuk manajemen hak asas file
+- Menjelaskan hsil output dari perintah linux dasar.
+- Menyususn laporan praktikum dengan struktur yang benar.
 ---
 
 ## Dasar Teori
 Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
-
+  Konsep dasar dari percobaan trsrbut adalah konsep system berkas dalam system operasi, konsep ini penting untuk mempelajarri bagaimana system operasi keamanan, efesiensi.
 ---
 
 ## Langkah Praktikum
@@ -33,10 +34,7 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+
 ```
 
 ---
@@ -55,17 +53,19 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+ Manajemen file memungkinkan pengguna untuk mengelola data dengan efisien serta menjaga keamanan melalui pengaturan hak akses.
 
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Apa fungsi dari perintah chmod?  
+   Jawaban: Perintah chmod digunakan untuk mengubah hak akses (permission) pada file atau direktori di sistem operasi                 Linux/Unix. Hak akses ini menentukan siapa yang dapat membaca (read), menulis (write), atau mengeksekusi                  (execute) file tersebut
+2. Apa arti dari kode permission rwxr-xr-?
+   Jawaban: •rwx → untuk pemilik (owner) : memiliki hak baca, tulis, dan eksekusi.
+            •r-x → untuk grup (group) : hanya bisa membaca dan mengeksekusi.
+            •r-- → untuk lainnya (others) : hanya bisa membaca.
+3. Jelaskan perbedaan antara chown dan chmod!
+   Jawaban: Chmod mengatur siapa yang boleh melakukan apa terhadap file, sedangkan chown mengatur siapa pemilik file                  tersebut.
 
 ---
 
