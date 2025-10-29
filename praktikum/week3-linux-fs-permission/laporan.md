@@ -20,8 +20,7 @@ Tuliskan tujuan praktikum minggu ini.
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
-  Konsep dasar dari percobaan trsrbut adalah konsep system berkas dalam system operasi, konsep ini penting untuk mempelajarri bagaimana system operasi keamanan, efesiensi.
+   Manajemen file dan permission di linux merupakan dasar pengturan penyimpanan dan keamanan data dalam sistem operasi. linux menggunakan struktur hierarki berawal dari direktori root(/) dengan berbagai jenis file seprti regular file, directory, link, dan device file. setiap file memiliki informasi izin (permission) dan pemilik yang diatur 
 ---
 
 ## Langkah Praktikum
