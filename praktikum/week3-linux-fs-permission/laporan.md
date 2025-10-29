@@ -32,8 +32,49 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 
 ---
 
-## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
+## Kode / Perintah:
+1. Setup Environment
+• Gunakan Linux (Ubuntu/WSL).
+• Pastikan folder kerja berada di dalam direktori repositori Git praktikum:
+ praktikum/week3-linux-fs-permission/
+
+3. Eksperimen 1 – Navigasi Sistem File Jalankan perintah berikut:
+
+pwd
+ls -l
+cd /tmp
+ls -a
+• Jelaskan hasil tiap perintah.
+• Catat direktori aktif, isi folder, dan file tersembunyi (jika ada).
+
+3. Eksperimen 2 – Membaca File Jalankan perintah:
+
+cat /etc/passwd | head -n 5
+• Jelaskan isi file dan struktur barisnya (user, UID, GID, home, shell).
+
+4. Eksperimen 3 – Permission & Ownership Buat file baru:
+
+echo "Hello <NAME><NIM>" > percobaan.txt
+ls -l percobaan.txt
+chmod 600 percobaan.txt
+ls -l percobaan.txt
+• Analisis perbedaan sebelum dan sesudah chmod.
+• Ubah pemilik file (jika memiliki izin sudo):
+
+sudo chown root percobaan.txt
+ls -l percobaan.txt
+• Catat hasilnya.
+
+5. Eksperimen 4 – Dokumentasi
+
+• Ambil screenshot hasil terminal dan simpan di:
+praktikum/week3-linux-fs-permission/screenshots/
+• Tambahkan analisis hasil pada laporan.md.
+• Commit & Push
+
+git add .
+git commit -m "Minggu 3 - Linux File System & Permission"
+git push origin main
 
 ```
 
