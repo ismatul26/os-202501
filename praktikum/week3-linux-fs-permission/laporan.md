@@ -20,7 +20,7 @@ Tuliskan tujuan praktikum minggu ini.
 ---
 
 ## Dasar Teori
-   Manajemen file dan permission di linux merupakan dasar pengturan penyimpanan dan keamanan data dalam sistem operasi. linux menggunakan struktur hierarki berawal dari direktori root(/) dengan berbagai jenis file seprti regular file, directory, link, dan device file. setiap file memiliki informasi izin (permission) dan pemilik yang diatur 
+   Manajemen file dan permission di linux merupakan dasar pengturan penyimpanan dan keamanan data dalam sistem operasi. linux menggunakan struktur hierarki berawal dari direktori root(/) dengan berbagai jenis file seprti regular file, directory, link, dan device file. setiap file memiliki informasi izin (permission) dan pemilik yang diatur melalui sistem read (r), write (w), dan execute (X) untuk tiga kategori pengguna. Tujuan utama manajemen file dan permission adalah menjaga keamanan, mengontrol akses, serta memastikan integritas databdan sistem agar pengguna hanya berhak yang dapat membaca, mengubah, atau menjalankn. 
 ---
 
 ## Langkah Praktikum
