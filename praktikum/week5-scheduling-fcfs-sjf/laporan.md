@@ -121,4 +121,3 @@ git push origin main
 - OSTEP – Operating Systems: Three Easy Pieces, 2018.
 - Linux Manual Pages – Scheduling & Process Control.
 
-_Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
